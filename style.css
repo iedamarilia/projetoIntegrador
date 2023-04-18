@@ -1,151 +1,50 @@
-/* Dependências 
-@import url("https://yarnpkg.com/en/package/normalize.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-
-Variáveis globais :root {
-  --size_xl: 3rem;
-  --size_lg: 2rem;
-  --size_md: 1rem;
-  --size_sm: 0.8rem;
-  --size_xs: 0.4rem;
-
-  --bg_primary__main: #141414;
-  --bg_primary__alt: #1c1c1c;
-  --bg_secondary__main: rgba(217, 217, 217, 0.1);
-  --bg_secondary__alt: rgba(217, 217, 217, 0.05);
-  --fg_primary: #fff;
-  --fg_highlight: white;
-
-  --font_main: "Montserrat";
-
-  --black: 900;
-  --bold: 700;
-  --regular: 500;
-  --thin: 400; 
-} 
-*/
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap");
 
 body {
-  height: 2000px;
-  /*background-image: linear-gradient(
-    90deg,
-    var(--bg_primary__main),
-    var(--bg_primary__alt)
-  ); */
-}
-
-/* Confg Menu Fixo */
-.logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background-color: #000000;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  font-family: Mukta;
   margin: 0;
 }
 
-li {
-  margin-right: 10px;
-}
-a {
-  color: #fff;
-}
-
-/*Cong. Caixas */
-.cards {
+.navbar {
+  background-color: #000;
   display: flex;
   justify-content: space-between;
 }
 
-.article class {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  left: 0;
-  top: 0;
-  margin: auto;
-  width: 0%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.5s;
+.menu {
+  display: flex;
 }
 
-/*a,
-h1,
-p,
-.copyright {
-  color: var(--fg_primary);
+.menu__item {
+  margin-right: 50px;
 }
 
-.content {
-  background-image: radial-gradient(
-    var(--bg_secondary__main),
-    var(--bg_secondary__alt)
-  );
-  border-color: var(--bg_secondary__main);
-}
-
-nav li:hover {
-  border-color: var(--fg_highlight);
-}
-
-.call-to-action {
-  background-color: var(--fg_highlight);
-}
-
-/* Tipografia */
-
-/*a,
-h1,
-p,
-.copyright {
-  font-family: var(--font_main);
-} 
-
-/*nav li a {
+.menu__item a {
+  color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
-  text-decoration: none;
-  font-weight: var(--thin);
-  font-size: var(--size_sm);
+  font-weight: 400;
 }
 
-nav li:hover a {
-  font-weight: var(--black);
+.carousel img {
+  width: 100%;
 }
 
-h1 {
-  font-size: var(--size_lg);
-  font-weight: var(--bold);
+.cards {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -100px;
 }
 
-p {
-  font-size: var(--size_md);
-  font-weight: var(--thin);
+.card {
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  padding: 70px 20px;
 }
 
-.call-to-action {
-  font-size: var(--size_md);
-  font-weight: var(--bold);
-  text-decoration: none;
+.card__image {
+  width: 70px;
+  margin-bottom: 50px;
 }
-
-.copyright {
-  font-size: var(--size_sm);
-  font-weight: var(--thin);
-} */
